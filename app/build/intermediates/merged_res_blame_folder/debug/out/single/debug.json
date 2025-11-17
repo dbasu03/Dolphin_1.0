@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_dialog_app_selection.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/dialog_app_selection.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_goal.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_goal.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_sleep_schedule.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_sleep_schedule.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_activity_main.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_activity_settings.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_welcome.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/drawable_circle_progress.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/drawable/circle_progress.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_activity_onboarding.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_permissions.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_permissions.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher_foreground.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/mipmap-anydpi-v26/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_allowed_apps.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_allowed_apps.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_item_app_selection.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/item_app_selection.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_strictness_mode.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_strictness_mode.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.dolphin.focus.app-merged_res-40:/layout_fragment_future_self.xml.flat",
+        "source": "com.dolphin.focus.app-main-42:/layout/fragment_future_self.xml"
+    }
+]
