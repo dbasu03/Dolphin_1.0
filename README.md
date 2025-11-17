@@ -2,6 +2,8 @@
 
 Dolphin is a phone usage guardian app for students that monitors distraction apps, detects harmful continuous usage, and shows psychologically intelligent notifications based on the student's own goals and future-self description.
 
+### Live Link: https://drive.google.com/file/d/12dcKG1vzqrJq2YlzyfWrL22OQPwFTJM5/view
+
 ## Building the App
 
 ### Prerequisites
