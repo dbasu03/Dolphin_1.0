@@ -1,83 +1,9 @@
 # Dolphin - Focus Guardian App
 
-Dolphin is a phone usage guardian app for students that monitors distraction apps, detects harmful continuous usage, and shows psychologically intelligent notifications based on the student's own goals and future-self description.
+Dolphin 1.0 is a focus-guarding Android application designed to help students build healthier phone habits in an environment filled with digital distractions. The app monitors usage patterns in real time, identifies distraction-heavy apps, and offers timely nudges that are personalised to the student’s goals, sleep routine, and future-self description. The intention is to blend behavioural science with practical mobile engineering so that users receive reminders that feel relevant, humane, and effective, rather than intrusive.
 
-### Live Link: https://drive.google.com/file/d/12dcKG1vzqrJq2YlzyfWrL22OQPwFTJM5/view
+The app is built in Java and runs on Android 8.0 (API 26) and above, targeting the latest SDK for modern device compatibility. The architecture is clean and maintainable, with separate layers for data handling, domain models, notification logic, background monitoring, and UI flows. The core of the system is a foreground service that continuously tracks app usage through Android’s Usage Stats API, while the in-house NudgeEngine generates context-aware notifications based on strictness levels and sleep schedules. All processing is fully offline, keeping user data private and the experience reliable even without internet access.
 
-## Building the App
+Dolphin’s onboarding flow asks students to articulate their goals, describe their ideal future self, and choose the apps they find distracting. Based on these inputs, the system adapts its behaviour through three strictness modes that range from gentle reminders to firmer, identity-based interventions. The user interface is crafted with XML layouts following Material Design 3, ensuring a modern experience that feels familiar to Android users while remaining lightweight and responsive.
 
-### Prerequisites
-- Android Studio (latest stable version)
-- JDK 8 or higher
-- Android SDK with API level 26 (minimum) and 34 (target)
-
-### Build Instructions
-
-1. Open the project in Android Studio
-2. Wait for Gradle sync to complete
-3. Build the APK:
-   - **Debug APK**: `Build > Build Bundle(s) / APK(s) > Build APK(s)`
-   - **Or use Gradle**: Run `./gradlew assembleDebug` (Linux/Mac) or `gradlew.bat assembleDebug` (Windows)
-
-The APK will be generated at: `app/build/outputs/apk/debug/app-debug.apk`
-
-### Installation
-
-1. Enable "Install from Unknown Sources" on your Android device
-2. Transfer the APK to your device
-3. Install and open the app
-4. Complete the onboarding flow:
-   - Set your goal
-   - Describe your future self
-   - Select distraction apps
-   - Choose strictness mode
-   - Set sleep schedule
-   - Grant required permissions (Usage Access and Notifications)
-
-## Features
-
-- **Continuous Usage Monitoring**: Tracks app usage in real-time
-- **Smart Notifications**: Context-aware nudges based on strictness mode
-- **Sleep Schedule Awareness**: Stricter limits during sleep hours
-- **Three Strictness Modes**:
-  - **Gentle**: 20 min limit (10 min late-night), dismissible reminders
-  - **Firm**: 12 min limit (6 min late-night), persistent reminders
-  - **Hardcore**: 8 min limit (4 min late-night), identity-based nudges
-- **Offline Operation**: All functionality works without internet
-
-## Technical Details
-
-- **Language**: Java
-- **Minimum SDK**: 26 (Android 8.0)
-- **Target SDK**: 34
-- **UI System**: XML layouts with Material Design 3
-- **Package**: com.dolphin.focus
-
-## Permissions Required
-
-- **Usage Access**: To monitor which apps are being used
-- **Notifications**: To send focus reminders
-- **Foreground Service**: To continuously monitor app usage
-
-## Project Structure
-
-```
-app/src/main/
-├── java/com/dolphin/focus/
-│   ├── data/          # ConfigRepository for SharedPreferences
-│   ├── model/          # Data models (UserConfig, SleepSchedule, StrictnessMode)
-│   ├── notifications/ # NudgeEngine for notifications
-│   ├── service/        # UsageMonitorService (foreground service)
-│   ├── ui/
-│   │   ├── main/       # MainActivity (dashboard)
-│   │   ├── onboarding/ # OnboardingActivity
-│   │   └── settings/   # SettingsActivity
-│   └── util/           # TimeUtils, AppUtils
-└── res/                # Resources (layouts, strings, colors, themes)
-```
-
-
-
-
-
-
+From an engineering standpoint, the project demonstrates practical mobile development skills: structured package organisation, clean separation of concerns, efficient use of Android services, and responsible permission handling for usage access, notifications, and foreground operations. The build process is standardised through Gradle and supports easy generation of debug APKs for testing and deployment. Dolphin 1.0 aims to serve as both a meaningful productivity tool for students and a showcase of thoughtful Android engineering aligned with industry expectations.
