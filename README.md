@@ -1,5 +1,7 @@
 # Dolphin - Focus Guardian App
 
+## APK Link - https://drive.google.com/file/d/12dcKG1vzqrJq2YlzyfWrL22OQPwFTJM5/view
+
 Dolphin 1.0 is a focus-guarding Android application designed to help students build healthier phone habits in an environment filled with digital distractions. The app monitors usage patterns in real time, identifies distraction-heavy apps, and offers timely nudges that are personalised to the student’s goals, sleep routine, and future-self description. The intention is to blend behavioural science with practical mobile engineering so that users receive reminders that feel relevant, humane, and effective, rather than intrusive.
 
 The app is built in Java and runs on Android 8.0 (API 26) and above, targeting the latest SDK for modern device compatibility. The architecture is clean and maintainable, with separate layers for data handling, domain models, notification logic, background monitoring, and UI flows. The core of the system is a foreground service that continuously tracks app usage through Android’s Usage Stats API, while the in-house NudgeEngine generates context-aware notifications based on strictness levels and sleep schedules. All processing is fully offline, keeping user data private and the experience reliable even without internet access.
